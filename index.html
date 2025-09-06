@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page Assignment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Welcome to My Interactive Page 🎉</h1>
+
+  <!-- Part 1: Event Handling Example -->
+  <button id="messageBtn">Click Me!</button>
+  <p id="messageText"></p>
+`
+  <!-- Part 2: Interactive Features -->
+  <section>
+    <h2>🌙 Light/Dark Mode Toggle</h2>
+    <button id="toggleTheme">Toggle Theme</button>
+  </section>
+
+  <section>
+    <h2>🔢 Counter Game</h2>
+    <button id="increaseBtn">Increase</button>
+    <button id="decreaseBtn">Decrease</button>
+    <p id="counterValue">0</p>
+  </section>
+
+  <!-- Collapsible FAQ -->
+  <section>
+    <h2>❓ FAQ Section</h2>
+    <div class="faq">
+      <button class="faq-question">What is this page about?</button>
+      <p class="faq-answer">This page is an assignment showing interactive web elements using JavaScript.</p>
+    </div>
+    <div class="faq">
+      <button class="faq-question">How does the form work?</button>
+      <p class="faq-answer">The form validates your input before submitting using JavaScript logic.</p>
+    </div>
+  </section>
+
+  <!-- Dropdown Menu -->
+  <section>
+    <h2>📂 Dropdown Menu</h2>
+    <div class="dropdown">
+      <button id="dropdownBtn">Open Menu ▼</button>
+      <div id="dropdownContent" class="dropdown-content">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tabbed Interface -->
+  <section>
+    <h2>📑 Tabbed Interface</h2>
+    <div class="tabs">
+      <button class="tab-btn" data-tab="tab1">Tab 1</button>
+      <button class="tab-btn" data-tab="tab2">Tab 2</button>
+      <button class="tab-btn" data-tab="tab3">Tab 3</button>
+    </div>
+    <div class="tab-content" id="tab1">This is content for Tab 1.</div>
+    <div class="tab-content" id="tab2" style="display:none;">This is content for Tab 2.</div>
+    <div class="tab-content" id="tab3" style="display:none;">This is content for Tab 3.</div>
+  </section>
+
+  <!-- Part 3: Form Validation -->
+  <section>
+    <h2>📝 Registration Form</h2>
+    <form id="registerForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name"><br><br>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email"><br><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password"><br><br>
+
+      <button type="submit">Submit</button>
+      <p id="formMessage"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
